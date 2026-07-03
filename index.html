@@ -3,138 +3,108 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>어머니의 학습 노트</title>
+  <title>AI2606 Study Note</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <aside class="sidebar">
-    <div class="profile">
-      <div class="avatar">📚</div>
-      <div>
-        <h1>학습 노트</h1>
-        <p>배운 내용을 차곡차곡</p>
-      </div>
-    </div>
-
-    <nav class="menu">
-      <a class="active" href="#">🏠 Home</a>
-      <a href="#ai">🤖 AI</a>
-      <a href="#cad">📐 CAD</a>
-      <a href="#sketchup">🪑 SketchUp</a>
-      <a href="#vray">🎨 V-Ray</a>
-      <a href="#interior">🏡 실내건축</a>
-      <a href="#excel">📊 엑셀</a>
-      <a href="#favorites">⭐ 즐겨찾기</a>
+  <header class="site-header">
+    <a class="logo" href="#top">AI2606</a>
+    <nav class="top-nav" aria-label="주요 메뉴">
+      <a href="#notes">Notes</a>
+      <a href="#categories">Category</a>
+      <a href="#workflow">Workflow</a>
     </nav>
-  </aside>
+  </header>
 
-  <main class="content">
-    <header class="hero">
-      <div>
-        <p class="eyebrow">MY STUDY NOTE</p>
-        <h2>오늘 배운 내용을<br />노션처럼 깔끔하게 정리해요.</h2>
-        <p class="hero-text">
-          AI, CAD, SketchUp, V-Ray, 실내건축, 엑셀까지<br />
-          공부한 내용을 카드와 노트 형식으로 모아두는 개인 학습 홈페이지입니다.
-        </p>
-      </div>
-      <div class="hero-card">
-        <span>오늘의 목표</span>
-        <strong>하루 1개 노트 정리</strong>
-        <p>작게 기록하고 오래 쌓기</p>
-      </div>
-    </header>
-
-    <section class="search-box">
-      <input type="text" placeholder="찾고 싶은 내용을 검색해보세요. 예: 브이레이 재질, CAD 레이어" />
+  <main id="top">
+    <section class="hero dark-section">
+      <div class="hero-kicker">MY LEARNING ARCHIVE</div>
+      <h1>
+        배운 것을<br />
+        나만의 방향으로<br />
+        정리하는 노트<span class="cursor"></span>
+      </h1>
+      <p class="hero-copy">
+        AI · CAD · SketchUp · V-Ray · 실내건축 · 엑셀까지<br />
+        흩어진 공부 기록을 한눈에 보이는 홈페이지로 정리합니다.
+      </p>
     </section>
 
-    <section class="section">
-      <div class="section-title">
-        <h3>카테고리</h3>
-        <p>공부 주제별로 정리</p>
+    <section class="intro light-section">
+      <p class="big-text">
+        빠르게 지나가는 배움은 쉽게 잊히지만, 기록된 배움은 다시 꺼내 쓸 수 있는 나만의 도구가 됩니다. 이 홈페이지는 노션처럼 정돈되고, 브랜드 사이트처럼 선명한 학습 노트입니다.
+      </p>
+    </section>
+
+    <section class="dashboard dark-section" id="notes">
+      <div class="section-head">
+        <span>RECENT NOTES</span>
+        <h2>최근 정리한 노트</h2>
       </div>
 
-      <div class="grid">
-        <article class="card" id="ai">
-          <div class="icon">🤖</div>
-          <h4>AI</h4>
-          <p>프롬프트, 발표자료, 이미지 생성, 업무 자동화</p>
-          <span>12개 노트</span>
+      <div class="note-grid">
+        <article class="note-card featured">
+          <div class="card-number">01</div>
+          <span class="tag">AI</span>
+          <h3>AI가 만든 발표자료는 사람이 만든 것과 다를까</h3>
+          <p>AI는 초안과 디자인 속도에 강하고, 사람은 검증과 청중 맞춤에 강합니다.</p>
         </article>
 
-        <article class="card" id="cad">
-          <div class="icon">📐</div>
-          <h4>CAD</h4>
-          <p>레이어, 축척, 치수, 도면 작성 순서</p>
-          <span>18개 노트</span>
+        <article class="note-card">
+          <div class="card-number">02</div>
+          <span class="tag">CAD</span>
+          <h3>동결과 끄기의 차이</h3>
+          <p>화면 표시, 계산 부담, 도면 관리 관점에서 기능을 구분해 정리합니다.</p>
         </article>
 
-        <article class="card" id="sketchup">
-          <div class="icon">🪑</div>
-          <h4>SketchUp</h4>
-          <p>가구 모델링, 베벨, 루비, 공간 구성</p>
-          <span>9개 노트</span>
-        </article>
-
-        <article class="card" id="vray">
-          <div class="icon">🎨</div>
-          <h4>V-Ray</h4>
-          <p>재질, 조명, 렌더링, 실사 보정</p>
-          <span>15개 노트</span>
-        </article>
-
-        <article class="card" id="interior">
-          <div class="icon">🏡</div>
-          <h4>실내건축</h4>
-          <p>마감재, 평면, 입면, 포트폴리오</p>
-          <span>7개 노트</span>
-        </article>
-
-        <article class="card" id="excel">
-          <div class="icon">📊</div>
-          <h4>엑셀</h4>
-          <p>가계부, 자동화, 표 정리, 예산 관리</p>
-          <span>5개 노트</span>
+        <article class="note-card">
+          <div class="card-number">03</div>
+          <span class="tag">V-RAY</span>
+          <h3>재질 폴더 관리</h3>
+          <p>자주 쓰는 재질을 폴더별로 정리해 렌더링 작업 속도를 높입니다.</p>
         </article>
       </div>
     </section>
 
-    <section class="section two-column">
-      <div>
-        <div class="section-title">
-          <h3>최근 정리한 노트</h3>
-          <p>최근 공부한 내용을 빠르게 확인</p>
-        </div>
-
-        <div class="note-list">
-          <article class="note">
-            <span class="tag ai">AI</span>
-            <h4>AI가 만든 발표자료는 사람이 만든 것과 다를까</h4>
-            <p>AI는 초안과 디자인에 강하고, 사람은 검증과 청중 맞춤에 강하다.</p>
-          </article>
-
-          <article class="note">
-            <span class="tag cad">CAD</span>
-            <h4>캐드에서 동결과 끄기의 차이</h4>
-            <p>전구 끄기는 화면 표시를 끄고, 동결은 도면 계산에서도 제외하는 느낌이다.</p>
-          </article>
-
-          <article class="note">
-            <span class="tag vray">V-Ray</span>
-            <h4>재질 폴더 정리 방법</h4>
-            <p>자주 쓰는 재질은 별도 폴더로 정리하면 작업 속도가 빨라진다.</p>
-          </article>
-        </div>
+    <section class="categories light-section" id="categories">
+      <div class="section-head dark-text">
+        <span>CATEGORY</span>
+        <h2>공부 주제</h2>
       </div>
 
-      <aside class="todo">
-        <h3>이번 주 공부 체크</h3>
-        <label><input type="checkbox" /> AI 발표자료 요약</label>
-        <label><input type="checkbox" /> CAD 레이어 복습</label>
-        <label><input type="checkbox" /> SketchUp 소파 모델링</label>
-        <label><input type="checkbox" /> V-Ray 조명 정리</label>
-      </aside>
+      <div class="category-list">
+        <a href="#" class="category-item"><span>AI</span><em>프롬프트 · 발표 · 자동화</em></a>
+        <a href="#" class="category-item"><span>CAD</span><em>레이어 · 축척 · 도면</em></a>
+        <a href="#" class="category-item"><span>SketchUp</span><em>모델링 · 루비 · 가구</em></a>
+        <a href="#" class="category-item"><span>V-Ray</span><em>재질 · 조명 · 렌더링</em></a>
+        <a href="#" class="category-item"><span>Interior</span><em>실내건축 · 포트폴리오</em></a>
+        <a href="#" class="category-item"><span>Excel</span><em>가계부 · 표 · 자동화</em></a>
+      </div>
+    </section>
+
+    <section class="workflow dark-section" id="workflow">
+      <div class="section-head">
+        <span>STUDY FLOW</span>
+        <h2>공부 정리 흐름</h2>
+      </div>
+
+      <div class="flow-grid">
+        <div class="flow-item">
+          <strong>01</strong>
+          <h3>질문하기</h3>
+          <p>모르는 내용을 짧게 질문하고 핵심 답변을 얻습니다.</p>
+        </div>
+        <div class="flow-item">
+          <strong>02</strong>
+          <h3>요약하기</h3>
+          <p>중요한 개념, 예시, 실수 포인트를 한 페이지로 정리합니다.</p>
+        </div>
+        <div class="flow-item">
+          <strong>03</strong>
+          <h3>다시 보기</h3>
+          <p>카테고리와 태그로 필요할 때 빠르게 찾아봅니다.</p>
+        </div>
+      </div>
     </section>
   </main>
 </body>
