@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="틀린 AI 문제를 다시 학습하는 오답노트">
+  <title>AICE STUDY | 오답노트</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/wrong-note.css">
+  <script defer src="./js/questions.js"></script>
+  <script defer src="./js/storage.js"></script>
+  <script defer src="./js/wrong-note.js"></script>
+</head>
+<body>
+  <header class="site-head">
+    <a class="brand" href="./index.html" aria-label="AICE STUDY 문제 목록">
+      <span class="brand-mark">A</span><span><strong>AICE STUDY</strong><small>AI 학습 CBT</small></span>
+    </a>
+    <nav aria-label="주요 메뉴">
+      <a href="./index.html">문제 학습</a>
+      <a class="is-active" href="./wrong-note.html">오답노트 <span class="nav-count" data-wrong-count hidden>0</span></a>
+    </nav>
+  </header>
+  <main class="content">
+    <section class="page-head">
+      <div><p class="eyebrow">REVIEW NOTE</p><h1>오답노트</h1><p>틀린 문제의 핵심 개념을 확인하고 다시 풀어보세요.</p></div>
+      <div class="wrong-summary"><span>복습할 문제</span><strong><b data-wrong-count>0</b><small>개</small></strong></div>
+    </section>
+    <section class="wrong-list" id="wrong-list" aria-label="오답 문제 목록"></section>
+    <section class="state-card empty-state" id="empty-state" hidden>
+      <span class="state-icon success">✓</span><p class="eyebrow">ALL CLEAR</p>
+      <h2>아직 오답 문제가 없습니다.</h2><p>문제를 풀고 학습 기록을 만들어보세요.</p>
+      <a class="btn btn-main" href="./index.html">문제 풀러 가기</a>
+    </section>
+  </main>
+</body>
+</html>
